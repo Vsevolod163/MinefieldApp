@@ -87,9 +87,9 @@ class ViewController: UIViewController {
         guard !isGameOver else { return }
         guard sender.alpha != 0 else { return }
         
-        if sender.currentTitle == "X" {
+        if sender.currentTitle == "💥" {
             isGameOver = true
-            resultOfGameLabel.text = "Game over!"
+            resultOfGameLabel.text = "Game over! 😢"
             showSquaresWithMinesIn(buttons: squares)
         } else {
             sender.alpha = 0
@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         
         if resultScore == 8 {
             isGameOver = true
-            resultOfGameLabel.text = "You win!"
+            resultOfGameLabel.text = "You won! 🎉"
             showSquaresWithMinesIn(buttons: squares)
         }
     }
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
         for _ in 1...5 {
             let randomElement = buttons.randomElement()
             randomElement?.titleLabel?.alpha = 0
-            randomElement?.setTitle("X", for: .normal)
+            randomElement?.setTitle("💥", for: .normal)
         }
     }
     
