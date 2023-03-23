@@ -89,17 +89,18 @@ class ViewController: UIViewController {
         
         if sender.currentTitle == "💥" {
             isGameOver = true
-            resultOfGameLabel.text = "Game over! 😢"
+            resultOfGameLabel.text = "Game over!"
             showSquaresWithMinesIn(buttons: squares)
         } else {
             sender.alpha = 0
             resultScore += 1
             scoreLabel.text = "Score: \(resultScore)"
+            squares.removeAll { $0 == sender }
         }
         
         if resultScore == 8 {
             isGameOver = true
-            resultOfGameLabel.text = "You won! 🎉"
+            resultOfGameLabel.text = "You won!"
             showSquaresWithMinesIn(buttons: squares)
         }
     }
@@ -110,6 +111,33 @@ class ViewController: UIViewController {
         scoreLabel.text = "Score: 0"
         resultOfGameLabel.text = ""
         resultOfGameLabel.text = "Score \(scoreForWin) points to win!"
+        squares = [
+            firstSqureButton,
+            secondSquareButton,
+            thirdSquareButton,
+            fourthSquareButton,
+            fifthSquareButton,
+            sixthSquareButton,
+            seventhSquareButton,
+            eighthSquareButton,
+            ninthSquareButton,
+            tenthSquareButton,
+            eleventhSquareButton,
+            twelfthSquareButton,
+            thirteenthSquareButton,
+            fourteenthSquareButton,
+            fifteenthSquareButton,
+            sixteenthSquareButton,
+            seventeenthSquareButton,
+            eighteenthSquareButton,
+            nineteenthSquareButton,
+            twentiethSquareButton,
+            twentyFirstSquareButton,
+            twentySecondSquareButton,
+            twentyThirdSquareButton,
+            twentyFourthSquareButton,
+            twentyFifthSquareButton
+        ]
         
         setTitlesIn(buttons: squares)
         setMinesIn(buttons: squares)
