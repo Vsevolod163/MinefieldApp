@@ -75,7 +75,7 @@ class ViewController: UIViewController {
             twentyFifthSquareButton
         ]
         
-        setTitlesIn(buttons: squares)
+        setTitlesAndCornerRadiusIn(buttons: squares)
         setMinesIn(buttons: squares)
         
         newGameButton.layer.cornerRadius = 10
@@ -139,11 +139,11 @@ class ViewController: UIViewController {
             twentyFifthSquareButton
         ]
         
-        setTitlesIn(buttons: squares)
+        setTitlesAndCornerRadiusIn(buttons: squares)
         setMinesIn(buttons: squares)
     }
 
-    private func setTitlesIn(buttons: [UIButton]) {
+    private func setTitlesAndCornerRadiusIn(buttons: [UIButton]) {
         for button in buttons {
             button.setTitle("", for: .normal)
             button.layer.cornerRadius = 10
