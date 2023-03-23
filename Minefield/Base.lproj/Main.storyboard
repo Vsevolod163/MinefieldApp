@@ -31,6 +31,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="New Game">
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newGameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="imX-xt-43I"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yMq-IZ-GJs">
                                         <rect key="frame" x="0.0" y="178.33333333333331" width="332" height="332"/>
@@ -47,8 +50,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTs-ew-3c0"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTU-ph-8Ep">
                                                         <rect key="frame" x="68" y="0.0" width="60" height="60"/>
@@ -56,8 +62,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfm-I2-xjy"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7F-7g-bTJ">
                                                         <rect key="frame" x="136" y="0.0" width="60" height="60"/>
@@ -65,8 +74,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAJ-8S-qQ2"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zny-6B-myj">
                                                         <rect key="frame" x="204" y="0.0" width="60" height="60"/>
@@ -74,8 +86,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e9V-kv-OEs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRn-zL-A0Z">
                                                         <rect key="frame" x="272" y="0.0" width="60" height="60"/>
@@ -83,8 +98,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ze0-Zc-rft"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -100,8 +118,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hay-qI-Cgt"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcS-u4-IGi">
                                                         <rect key="frame" x="68" y="0.0" width="60" height="60"/>
@@ -109,8 +130,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZZ-Qa-b3c"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ube-Rc-m93">
                                                         <rect key="frame" x="136" y="0.0" width="60" height="60"/>
@@ -118,8 +142,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Npa-xd-nWw"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhD-ZM-Rfe">
                                                         <rect key="frame" x="204" y="0.0" width="60" height="60"/>
@@ -127,8 +154,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Owf-oL-z0v"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oan-xt-6NU">
                                                         <rect key="frame" x="272" y="0.0" width="60" height="60"/>
@@ -136,8 +166,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bc6-I8-ZwE"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -153,8 +186,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rom-lq-Voa"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SH-8y-xDP">
                                                         <rect key="frame" x="68" y="0.0" width="60" height="60"/>
@@ -162,8 +198,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfE-ve-qZp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdh-8X-Hn5">
                                                         <rect key="frame" x="136" y="0.0" width="60" height="60"/>
@@ -171,8 +210,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0d-zR-u9z"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4J-Ny-ZAn">
                                                         <rect key="frame" x="204" y="0.0" width="60" height="60"/>
@@ -180,8 +222,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yg-vU-Ued"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uev-Xa-87y">
                                                         <rect key="frame" x="272" y="0.0" width="60" height="60"/>
@@ -189,8 +234,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5nd-Es-8zr"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -206,8 +254,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q1J-NI-tYX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buK-g9-ZSe">
                                                         <rect key="frame" x="68" y="0.0" width="60" height="60"/>
@@ -215,8 +266,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vmK-lc-arx"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2Q-9u-qcJ">
                                                         <rect key="frame" x="136" y="0.0" width="60" height="60"/>
@@ -224,8 +278,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfd-SK-19S"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcu-Yc-8Rt">
                                                         <rect key="frame" x="204" y="0.0" width="60" height="60"/>
@@ -233,8 +290,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1b-DT-0RZ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZY-j3-oxS">
                                                         <rect key="frame" x="272" y="0.0" width="60" height="60"/>
@@ -242,8 +302,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKC-FS-v6V"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -259,8 +322,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKE-fq-Dwc"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leG-XW-e78">
                                                         <rect key="frame" x="68" y="0.0" width="60" height="60"/>
@@ -268,8 +334,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tdc-fd-gFP"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghJ-mn-L0Q">
                                                         <rect key="frame" x="136" y="0.0" width="60" height="60"/>
@@ -277,8 +346,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9p-wW-fSD"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deQ-MS-YqK">
                                                         <rect key="frame" x="204" y="0.0" width="60" height="60"/>
@@ -286,8 +358,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.442750853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZLn-XH-Fpu"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Te-sS-g3a">
                                                         <rect key="frame" x="272" y="0.0" width="60" height="60"/>
@@ -295,8 +370,11 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal">
-                                                            <color key="titleColor" red="0.058322020209999999" green="0.056735140390000001" blue="0.13679929120000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="titleColor" red="1" green="0.0" blue="0.44275085295130001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="tapSquareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gvJ-h6-oM4"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -304,15 +382,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Счет: 20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bH0-FZ-Pnr">
-                                <rect key="frame" x="83.333333333333343" y="762" width="263.66666666666663" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bH0-FZ-Pnr">
+                                <rect key="frame" x="215" y="762" width="0.0" height="56"/>
                                 <color key="backgroundColor" red="0.0016202857649999999" green="0.027540492140000001" blue="0.10172358250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы проиграли!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vwp-rS-WTJ">
-                                <rect key="frame" x="115.00000000000001" y="696" width="200.33333333333337" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vwp-rS-WTJ">
+                                <rect key="frame" x="215" y="696" width="0.0" height="36"/>
                                 <color key="backgroundColor" red="0.0016202857649999999" green="0.027540492140000001" blue="0.10172358250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -335,10 +413,40 @@
                             <constraint firstItem="Vwp-rS-WTJ" firstAttribute="top" secondItem="ymm-ub-r6W" secondAttribute="bottom" constant="30.670000000000002" id="u78-Vc-3t4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eighteenthSquareButton" destination="Ube-Rc-m93" id="buk-dt-zXw"/>
+                        <outlet property="eighthSquareButton" destination="G2Q-9u-qcJ" id="p60-UH-Oc4"/>
+                        <outlet property="eleventhSquareButton" destination="tnZ-H0-48B" id="Km0-qw-bWT"/>
+                        <outlet property="fifteenthSquareButton" destination="uev-Xa-87y" id="tCu-kE-6F5"/>
+                        <outlet property="fifthSquareButton" destination="8Te-sS-g3a" id="We7-Qu-PKa"/>
+                        <outlet property="firstSqureButton" destination="8WX-ZL-VeM" id="853-6r-aEs"/>
+                        <outlet property="fourteenthSquareButton" destination="t4J-Ny-ZAn" id="gO3-Mh-3tW"/>
+                        <outlet property="fourthSquareButton" destination="deQ-MS-YqK" id="zw5-UF-sVw"/>
+                        <outlet property="newGameButton" destination="JCG-su-L4E" id="SnH-Dk-C1s"/>
+                        <outlet property="nineteenthSquareButton" destination="vhD-ZM-Rfe" id="dQr-dV-Uur"/>
+                        <outlet property="ninthSquareButton" destination="Jcu-Yc-8Rt" id="Yd2-im-aow"/>
+                        <outlet property="resultOfGameLabel" destination="Vwp-rS-WTJ" id="HyJ-03-NNv"/>
+                        <outlet property="scoreLabel" destination="bH0-FZ-Pnr" id="Rud-Fd-i8U"/>
+                        <outlet property="secondSquareButton" destination="leG-XW-e78" id="9OL-IZ-uCo"/>
+                        <outlet property="seventeenthSquareButton" destination="WcS-u4-IGi" id="PJ2-3B-V32"/>
+                        <outlet property="seventhSquareButton" destination="buK-g9-ZSe" id="BaR-P7-o4s"/>
+                        <outlet property="sixteenthSquareButton" destination="G4C-KU-fp3" id="hsw-44-2M9"/>
+                        <outlet property="sixthSquareButton" destination="U96-5v-S7T" id="ByY-97-bNd"/>
+                        <outlet property="tenthSquareButton" destination="7ZY-j3-oxS" id="KiX-Yv-NX2"/>
+                        <outlet property="thirdSquareButton" destination="ghJ-mn-L0Q" id="qWI-hh-18G"/>
+                        <outlet property="thirteenthSquareButton" destination="wdh-8X-Hn5" id="qbz-gS-XQu"/>
+                        <outlet property="twelfthSquareButton" destination="7SH-8y-xDP" id="d48-Tt-BfI"/>
+                        <outlet property="twentiethSquareButton" destination="oan-xt-6NU" id="qBW-Nd-lBE"/>
+                        <outlet property="twentyFifthSquareButton" destination="YRn-zL-A0Z" id="xyk-qQ-pnl"/>
+                        <outlet property="twentyFirstSquareButton" destination="IDw-gs-0q4" id="JCd-uk-fGs"/>
+                        <outlet property="twentyFourthSquareButton" destination="zny-6B-myj" id="PIi-pT-3Zc"/>
+                        <outlet property="twentySecondSquareButton" destination="xTU-ph-8Ep" id="AWe-mJ-9Q2"/>
+                        <outlet property="twentyThirdSquareButton" destination="n7F-7g-bTJ" id="HOG-54-c9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.046511627906973" y="-2.5751072961373391"/>
+            <point key="canvasLocation" x="387" y="95"/>
         </scene>
     </scenes>
 </document>
