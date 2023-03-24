@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     @IBOutlet var resultOfGameLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
