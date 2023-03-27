@@ -80,7 +80,7 @@ final class ViewController: UIViewController {
         
         newGameButton.layer.cornerRadius = 10
         resultOfGameLabel.text = "Score \(scoreForWin) points to win!"
-        scoreLabel.text = "Score: 0"
+        scoreLabel.text = "0"
     }
     
     @IBAction func tapSquareButton(_ sender: UIButton) {
@@ -94,7 +94,7 @@ final class ViewController: UIViewController {
         } else {
             sender.alpha = 0
             resultScore += 1
-            scoreLabel.text = "Score: \(resultScore)"
+            scoreLabel.text = "\(resultScore)"
             squares.removeAll { $0 == sender }
         }
         
@@ -108,7 +108,7 @@ final class ViewController: UIViewController {
     @IBAction func newGameButton(_ sender: UIButton) {
         resultScore = 0
         isGameOver = false
-        scoreLabel.text = "Score: 0"
+        scoreLabel.text = "0"
         resultOfGameLabel.text = ""
         resultOfGameLabel.text = "Score \(scoreForWin) points to win!"
         squares = [
