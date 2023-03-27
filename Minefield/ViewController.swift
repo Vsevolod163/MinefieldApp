@@ -104,7 +104,6 @@ final class ViewController: UIViewController {
             showSquaresWithMinesIn(buttons: squares)
         }
     }
-    
     @IBAction func newGameButton(_ sender: UIButton) {
         resultScore = 0
         isGameOver = false
