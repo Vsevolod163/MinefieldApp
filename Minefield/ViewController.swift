@@ -12,31 +12,7 @@ final class ViewController: UIViewController {
     @IBOutlet var resultOfGameLabel: UILabel!
     @IBOutlet var scoreLabel: UILabel!
     
-    @IBOutlet var firstSqureButton: UIButton!
-    @IBOutlet var secondSquareButton: UIButton!
-    @IBOutlet var thirdSquareButton: UIButton!
-    @IBOutlet var fourthSquareButton: UIButton!
-    @IBOutlet var fifthSquareButton: UIButton!
-    @IBOutlet var sixthSquareButton: UIButton!
-    @IBOutlet var seventhSquareButton: UIButton!
-    @IBOutlet var eighthSquareButton: UIButton!
-    @IBOutlet var ninthSquareButton: UIButton!
-    @IBOutlet var tenthSquareButton: UIButton!
-    @IBOutlet var eleventhSquareButton: UIButton!
-    @IBOutlet var twelfthSquareButton: UIButton!
-    @IBOutlet var thirteenthSquareButton: UIButton!
-    @IBOutlet var fourteenthSquareButton: UIButton!
-    @IBOutlet var fifteenthSquareButton: UIButton!
-    @IBOutlet var sixteenthSquareButton: UIButton!
-    @IBOutlet var seventeenthSquareButton: UIButton!
-    @IBOutlet var eighteenthSquareButton: UIButton!
-    @IBOutlet var nineteenthSquareButton: UIButton!
-    @IBOutlet var twentiethSquareButton: UIButton!
-    @IBOutlet var twentyFirstSquareButton: UIButton!
-    @IBOutlet var twentySecondSquareButton: UIButton!
-    @IBOutlet var twentyThirdSquareButton: UIButton!
-    @IBOutlet var twentyFourthSquareButton: UIButton!
-    @IBOutlet var twentyFifthSquareButton: UIButton!
+    @IBOutlet var squareButtons: [UIButton]!
     @IBOutlet var newGameButton: UIButton!
     
     private var resultScore = 0
@@ -46,37 +22,8 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        squares = [
-            firstSqureButton,
-            secondSquareButton,
-            thirdSquareButton,
-            fourthSquareButton,
-            fifthSquareButton,
-            sixthSquareButton,
-            seventhSquareButton,
-            eighthSquareButton,
-            ninthSquareButton,
-            tenthSquareButton,
-            eleventhSquareButton,
-            twelfthSquareButton,
-            thirteenthSquareButton,
-            fourteenthSquareButton,
-            fifteenthSquareButton,
-            sixteenthSquareButton,
-            seventeenthSquareButton,
-            eighteenthSquareButton,
-            nineteenthSquareButton,
-            twentiethSquareButton,
-            twentyFirstSquareButton,
-            twentySecondSquareButton,
-            twentyThirdSquareButton,
-            twentyFourthSquareButton,
-            twentyFifthSquareButton
-        ]
-        
-        setTitlesAndCornerRadiusIn(buttons: squares)
-        setMinesIn(buttons: squares)
+        setCornerRadiusIn(buttons: squareButtons)
+        setMinesIn(buttons: squareButtons)
         
         newGameButton.layer.cornerRadius = 10
         resultOfGameLabel.text = "Score \(scoreForWin) points to win!"
@@ -90,7 +37,7 @@ final class ViewController: UIViewController {
         if sender.currentTitle == "💥" {
             isGameOver = true
             resultOfGameLabel.text = "Game over!"
-            showSquaresWithMinesIn(buttons: squares)
+            showSquaresWithMinesIn(buttons: squareButtons)
         } else {
             sender.alpha = 0
             resultScore += 1
@@ -101,7 +48,7 @@ final class ViewController: UIViewController {
         if resultScore == 8 {
             isGameOver = true
             resultOfGameLabel.text = "You won!"
-            showSquaresWithMinesIn(buttons: squares)
+            showSquaresWithMinesIn(buttons: squareButtons)
         }
     }
     
@@ -111,49 +58,40 @@ final class ViewController: UIViewController {
         scoreLabel.text = "0"
         resultOfGameLabel.text = ""
         resultOfGameLabel.text = "Score \(scoreForWin) points to win!"
-        squares = [
-            firstSqureButton,
-            secondSquareButton,
-            thirdSquareButton,
-            fourthSquareButton,
-            fifthSquareButton,
-            sixthSquareButton,
-            seventhSquareButton,
-            eighthSquareButton,
-            ninthSquareButton,
-            tenthSquareButton,
-            eleventhSquareButton,
-            twelfthSquareButton,
-            thirteenthSquareButton,
-            fourteenthSquareButton,
-            fifteenthSquareButton,
-            sixteenthSquareButton,
-            seventeenthSquareButton,
-            eighteenthSquareButton,
-            nineteenthSquareButton,
-            twentiethSquareButton,
-            twentyFirstSquareButton,
-            twentySecondSquareButton,
-            twentyThirdSquareButton,
-            twentyFourthSquareButton,
-            twentyFifthSquareButton
-        ]
         
-        setTitlesAndCornerRadiusIn(buttons: squares)
-        setMinesIn(buttons: squares)
+        setTitlesIn(buttons: squareButtons)
+        setAlphaIn(buttons: squareButtons)
+        setMinesIn(buttons: squareButtons)
     }
 
-    private func setTitlesAndCornerRadiusIn(buttons: [UIButton]) {
+    private func setCornerRadiusIn(buttons: [UIButton]) {
         for button in buttons {
-            button.setTitle("", for: .normal)
             button.layer.cornerRadius = 10
-            button.alpha = 1
+        }
+    }
+    
+    private func setTitlesIn(buttons: [UIButton]) {
+        for button in buttons {
+            if button.currentTitle == "💥" {
+                button.setTitle("", for: .normal)
+            }
+        }
+    }
+    
+    private func setAlphaIn(buttons: [UIButton]) {
+        for button in buttons {
+            if button.alpha == 0 {
+                button.alpha = 1
+            }
         }
     }
     
     private func setMinesIn(buttons: [UIButton]) {
+        var buttons: [UIButton] = buttons
+        
         for _ in 1...5 {
             let randomElement = buttons.randomElement()
+            buttons.removeAll { $0 == randomElement }
             randomElement?.titleLabel?.alpha = 0
             randomElement?.setTitle("💥", for: .normal)
         }
@@ -161,7 +99,9 @@ final class ViewController: UIViewController {
     
     private func showSquaresWithMinesIn(buttons: [UIButton]) {
         for button in buttons {
-            button.titleLabel?.alpha = 1
+            if button.titleLabel?.alpha == 0 {
+                button.titleLabel?.alpha = 1
+            }
         }
     }
 }

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,7 +37,7 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yMq-IZ-GJs">
-                                        <rect key="frame" x="0.0" y="178.33333333333331" width="332" height="332"/>
+                                        <rect key="frame" x="0.0" y="178.33333333333331" width="332" height="332.00000000000006"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N9w-Ls-DzD">
                                                 <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
@@ -427,34 +428,34 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="eighteenthSquareButton" destination="Ube-Rc-m93" id="buk-dt-zXw"/>
-                        <outlet property="eighthSquareButton" destination="G2Q-9u-qcJ" id="p60-UH-Oc4"/>
-                        <outlet property="eleventhSquareButton" destination="tnZ-H0-48B" id="Km0-qw-bWT"/>
-                        <outlet property="fifteenthSquareButton" destination="uev-Xa-87y" id="tCu-kE-6F5"/>
-                        <outlet property="fifthSquareButton" destination="8Te-sS-g3a" id="We7-Qu-PKa"/>
-                        <outlet property="firstSqureButton" destination="8WX-ZL-VeM" id="853-6r-aEs"/>
-                        <outlet property="fourteenthSquareButton" destination="t4J-Ny-ZAn" id="gO3-Mh-3tW"/>
-                        <outlet property="fourthSquareButton" destination="deQ-MS-YqK" id="zw5-UF-sVw"/>
                         <outlet property="newGameButton" destination="JCG-su-L4E" id="SnH-Dk-C1s"/>
-                        <outlet property="nineteenthSquareButton" destination="vhD-ZM-Rfe" id="dQr-dV-Uur"/>
-                        <outlet property="ninthSquareButton" destination="Jcu-Yc-8Rt" id="Yd2-im-aow"/>
                         <outlet property="resultOfGameLabel" destination="Vwp-rS-WTJ" id="HyJ-03-NNv"/>
                         <outlet property="scoreLabel" destination="dX1-wM-TpV" id="dWp-5s-DxE"/>
-                        <outlet property="secondSquareButton" destination="leG-XW-e78" id="9OL-IZ-uCo"/>
-                        <outlet property="seventeenthSquareButton" destination="WcS-u4-IGi" id="PJ2-3B-V32"/>
-                        <outlet property="seventhSquareButton" destination="buK-g9-ZSe" id="BaR-P7-o4s"/>
-                        <outlet property="sixteenthSquareButton" destination="G4C-KU-fp3" id="hsw-44-2M9"/>
-                        <outlet property="sixthSquareButton" destination="U96-5v-S7T" id="ByY-97-bNd"/>
-                        <outlet property="tenthSquareButton" destination="7ZY-j3-oxS" id="KiX-Yv-NX2"/>
-                        <outlet property="thirdSquareButton" destination="ghJ-mn-L0Q" id="qWI-hh-18G"/>
-                        <outlet property="thirteenthSquareButton" destination="wdh-8X-Hn5" id="qbz-gS-XQu"/>
-                        <outlet property="twelfthSquareButton" destination="7SH-8y-xDP" id="d48-Tt-BfI"/>
-                        <outlet property="twentiethSquareButton" destination="oan-xt-6NU" id="qBW-Nd-lBE"/>
-                        <outlet property="twentyFifthSquareButton" destination="YRn-zL-A0Z" id="xyk-qQ-pnl"/>
-                        <outlet property="twentyFirstSquareButton" destination="IDw-gs-0q4" id="JCd-uk-fGs"/>
-                        <outlet property="twentyFourthSquareButton" destination="zny-6B-myj" id="PIi-pT-3Zc"/>
-                        <outlet property="twentySecondSquareButton" destination="xTU-ph-8Ep" id="AWe-mJ-9Q2"/>
-                        <outlet property="twentyThirdSquareButton" destination="n7F-7g-bTJ" id="HOG-54-c9d"/>
+                        <outletCollection property="squareButtons" destination="8WX-ZL-VeM" collectionClass="NSMutableArray" id="y56-3m-Ue4"/>
+                        <outletCollection property="squareButtons" destination="leG-XW-e78" collectionClass="NSMutableArray" id="PqG-Cd-YJy"/>
+                        <outletCollection property="squareButtons" destination="ghJ-mn-L0Q" collectionClass="NSMutableArray" id="J1p-Hb-gnM"/>
+                        <outletCollection property="squareButtons" destination="deQ-MS-YqK" collectionClass="NSMutableArray" id="5mS-uK-uWx"/>
+                        <outletCollection property="squareButtons" destination="8Te-sS-g3a" collectionClass="NSMutableArray" id="4rs-M0-p0M"/>
+                        <outletCollection property="squareButtons" destination="U96-5v-S7T" collectionClass="NSMutableArray" id="Mh7-J1-tsd"/>
+                        <outletCollection property="squareButtons" destination="buK-g9-ZSe" collectionClass="NSMutableArray" id="k5z-D3-KFd"/>
+                        <outletCollection property="squareButtons" destination="G2Q-9u-qcJ" collectionClass="NSMutableArray" id="Xdy-Df-bhB"/>
+                        <outletCollection property="squareButtons" destination="Jcu-Yc-8Rt" collectionClass="NSMutableArray" id="RM8-NR-sSF"/>
+                        <outletCollection property="squareButtons" destination="7ZY-j3-oxS" collectionClass="NSMutableArray" id="MHh-cL-m9v"/>
+                        <outletCollection property="squareButtons" destination="tnZ-H0-48B" collectionClass="NSMutableArray" id="WID-l2-P5k"/>
+                        <outletCollection property="squareButtons" destination="7SH-8y-xDP" collectionClass="NSMutableArray" id="WvG-lU-7IR"/>
+                        <outletCollection property="squareButtons" destination="wdh-8X-Hn5" collectionClass="NSMutableArray" id="tg6-7o-yuE"/>
+                        <outletCollection property="squareButtons" destination="t4J-Ny-ZAn" collectionClass="NSMutableArray" id="2DK-ej-ykF"/>
+                        <outletCollection property="squareButtons" destination="uev-Xa-87y" collectionClass="NSMutableArray" id="MAA-NW-hYM"/>
+                        <outletCollection property="squareButtons" destination="G4C-KU-fp3" collectionClass="NSMutableArray" id="DAR-IB-Hg3"/>
+                        <outletCollection property="squareButtons" destination="WcS-u4-IGi" collectionClass="NSMutableArray" id="da7-cm-3X4"/>
+                        <outletCollection property="squareButtons" destination="Ube-Rc-m93" collectionClass="NSMutableArray" id="tNV-IO-zf0"/>
+                        <outletCollection property="squareButtons" destination="vhD-ZM-Rfe" collectionClass="NSMutableArray" id="PNj-WT-jam"/>
+                        <outletCollection property="squareButtons" destination="oan-xt-6NU" collectionClass="NSMutableArray" id="4sJ-gV-G6j"/>
+                        <outletCollection property="squareButtons" destination="YRn-zL-A0Z" collectionClass="NSMutableArray" id="CGP-gL-h1W"/>
+                        <outletCollection property="squareButtons" destination="zny-6B-myj" collectionClass="NSMutableArray" id="K9q-Ns-Rik"/>
+                        <outletCollection property="squareButtons" destination="n7F-7g-bTJ" collectionClass="NSMutableArray" id="J7p-uu-qrD"/>
+                        <outletCollection property="squareButtons" destination="xTU-ph-8Ep" collectionClass="NSMutableArray" id="qsj-Bc-3D5"/>
+                        <outletCollection property="squareButtons" destination="IDw-gs-0q4" collectionClass="NSMutableArray" id="jad-fa-n08"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
