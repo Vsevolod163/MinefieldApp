@@ -15,10 +15,11 @@ final class ViewController: UIViewController {
     @IBOutlet var squareButtons: [UIButton]!
     @IBOutlet var newGameButton: UIButton!
     
+    private let scoreForWin = 8
+    
     private var resultScore = 0
     private var isGameOver = false
     private var squares: [UIButton] = []
-    private let scoreForWin = 8
 
     override func viewDidLoad() {
         super.viewDidLoad()
